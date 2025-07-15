@@ -11,10 +11,10 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background-image: url("./assets/bg.jpg");
+  background-image: url("./assets/bg-alert.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color-dodge;
 }
@@ -90,6 +90,7 @@ header{
     background-repeat: repeat;
     background-blend-mode: multiply;
     background-color: rgba(0,0,0,0.7);
+    background-image: url("./assets/bg-alert.jpg");
   }
   .alert-container {
     flex-direction: column;
