@@ -85,7 +85,11 @@ header{
     padding: 10px;
     height: auto;
     min-height: 100vh;
-    background-position: top;
+    background-position: top left;
+    background-size: auto;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.7);
   }
   .alert-container {
     flex-direction: column;
