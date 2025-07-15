@@ -1,0 +1,54 @@
+$error-color: #ff0000;
+$error-background-color: #f736363a;
+$warning-color: #ffa500;
+$warning-background-color: #ffa5003a;
+$success-color: #00ff00;
+$success-background-color: #00ff003a;
+$info-color: #0000ff;
+$info-background-color: #0000ff3a;  
+
+
+@mixin alert($type, $color, $background-color) {
+  .#{$type} {
+    border: 1px dotted $color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: $background-color;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    color: $color;
+    
+
+    .alert-wrapper-icon {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+}
+
+@include alert("alert-error", $error-color, $error-background-color);
+@include alert("alert-warning", $warning-color, $warning-background-color);
+@include alert("alert-success", $success-color, $success-background-color);
+@include alert("alert-info", $info-color, $info-background-color);
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
