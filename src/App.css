@@ -14,7 +14,7 @@ body {
   background-image: url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color-dodge;
 }
